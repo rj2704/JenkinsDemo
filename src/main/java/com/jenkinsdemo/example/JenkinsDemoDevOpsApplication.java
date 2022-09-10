@@ -21,7 +21,7 @@ public class JenkinsDemoDevOpsApplication extends SpringBootServletInitializer{
 		SpringApplication.run(JenkinsDemoDevOpsApplication.class, args);
 	}
 	
-	@RequestMapping(path="/", method=RequestMethod.GET)
+	@RequestMapping(value="/hello")
 	public String welcome() {
 		return "Hello, This is Jigar Rathod";
 	}
