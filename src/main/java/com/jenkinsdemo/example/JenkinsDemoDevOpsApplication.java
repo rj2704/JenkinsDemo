@@ -23,6 +23,6 @@ public class JenkinsDemoDevOpsApplication extends SpringBootServletInitializer{
 	
 	@RequestMapping(value="/hello")
 	public String welcome() {
-		return "Hello, Welcome to DevOps!";
+		return "Hello, Welcome to DevOps Learning!";
 	}
 }
