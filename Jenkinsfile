@@ -16,7 +16,7 @@ pipeline{
         }
         stage("Deploy on Prod"){
             steps{
-                deploy adapters: [tomcat9(credentialsId: 'tomcat9Details', path: '', url: 'http://172.18.122.172:8080')], contextPath: '/app', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'tomcat9Details', path: '', url: 'http://172.18.122.172:8080')], contextPath: '/homepage', war: '**/*.war'
             }
         }
     }
